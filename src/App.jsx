@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { v4 as uuidv4 } from 'uuid';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -107,6 +108,7 @@ function App() {
         </div>
 
       </div>
+      <Analytics />
     </>
   )
 }
