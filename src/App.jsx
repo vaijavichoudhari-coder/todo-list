@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Navbar from './components/Navbar'
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
@@ -73,6 +74,7 @@ function App() {
 
   return (
     <>
+      <SpeedInsights />
       <Navbar />
       <div className="mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] md:w-1/2">
         <h1 className='font-bold text-center text-3xl'>iTask - Manage your at one place</h1>
